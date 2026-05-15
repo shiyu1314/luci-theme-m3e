@@ -55,7 +55,7 @@ header h3 a {
 	}
 
 	footer.footer-m3e {
-		padding: 2.5rem 1rem 1rem !important; /* Keep top padding for the wavy line */
+		padding: 2rem 1rem 0.5rem !important; /* Keep top padding for the wavy line */
 	}
 
 	.modal {
@@ -415,7 +415,7 @@ header h3 a {
 		transform: translateX(-100%);
 		z-index: 900;
 		border-radius:  0 0 2rem 0;
-		background: var(--md-sys-color-surface) !important;
+		background: var(--md-sys-color-surface-dim) !important;
 		position: fixed;
 		bottom: 0;
 		box-shadow: none;

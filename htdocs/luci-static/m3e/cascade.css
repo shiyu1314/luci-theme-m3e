@@ -1624,7 +1624,7 @@
         footer.footer-m3e {
                 position: relative;
                 margin: 2rem 5% 0.5rem 5%;
-		padding: 1rem 2rem 0.5rem;
+		padding: 1.5rem 2rem 0.25rem;
                 background: var(--md-sys-color-surface);
                 display: flex;
                 flex-direction: column;
@@ -1643,17 +1643,17 @@
         .footer-wavy-line {
                 position: absolute;
                 top: 0;
-                left: 0;
-                right: 0;
+		left: -2rem;
+		right: -2rem;
                 width: auto;
-                height: 16px;
-                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16' viewBox='0 0 32 16'%3E%3Cpath d='M0 8 Q 8 16, 16 8 T 32 8' fill='none' stroke='rgba(128,128,128,0.3)' stroke-width='1.5'/%3E%3C/svg%3E");
+		height: 12px;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cpath d='M0 6 Q 6 11, 12 6 T 24 6' fill='none' stroke='rgba(128,128,128,0.3)' stroke-width='1.2'/%3E%3C/svg%3E");
                 background-repeat: repeat-x;
-                background-size: 32px 16px;
+		background-size: 24px 12px;
         }
 
         [data-darkmode=true] .footer-wavy-line {
-                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16' viewBox='0 0 32 16'%3E%3Cpath d='M0 8 Q 8 16, 16 8 T 32 8' fill='none' stroke='rgba(255,255,255,0.2)' stroke-width='1.5'/%3E%3C/svg%3E");
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cpath d='M0 6 Q 6 11, 12 6 T 24 6' fill='none' stroke='rgba(255,255,255,0.2)' stroke-width='1.2'/%3E%3C/svg%3E");
         }
 
         .footer-content {
@@ -2921,9 +2921,10 @@
 	}
 	.sidebar {
 		grid-area: sidebar;
-		width: auto;
+		width: var(--sidebar-width);
 		height: auto;
-		background: transparent;
+		box-sizing: border-box;
+		background: var(--md-sys-color-surface-dim);
 		border: none;
 		padding: 0;
 		overflow-y: auto;
